@@ -1,0 +1,61 @@
+/* Navigation Bar */
+@import url('https://fonts.googleapis.com/css?family=Oxanium:500');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+li, a, button{
+	font-family: "Oxanium", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #24252A;
+}
+
+nav{
+	list-style: none;
+	position: sticky;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding-right: 20px;
+	position: relative;
+}
+
+nav ul li a{
+	transition: all 0.3s ease 0s;
+	display: block;
+}
+
+nav ul li a:hover{
+	color: #0088A9;
+}
+
+nav ul ul{
+	background-color: #24252A;
+	position: absolute;
+	top: 20px;
+	display: none;
+	font-family: "Oxanium";
+	font-size: 10px;
+}
+
+nav ul ul li{
+	padding-top: 10px;
+}
+
+nav ul li:hover > ul{
+	display: block;
+}

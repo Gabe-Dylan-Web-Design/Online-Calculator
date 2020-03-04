@@ -1,0 +1,63 @@
+/* Login Box */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.LoginBox{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+.LoginBox h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+}
+
+.LoginBox input[type = "text"], .LoginBox input[type = "password"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #003D66;
+    border-radius: 24px;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.LoginBox input[type = "submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #003D66;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.LoginBox input[type = "text"]:focus, .LoginBox input[type = "password"]:focus{
+    width: 280px;
+    margin: 20px auto 20px 10px;
+    border-color: #006BB2;
+}
+
+.LoginBox input[type = "submit"]:hover{
+    border: 2px solid #006BB2;
+    background: #006BB2;
+}
